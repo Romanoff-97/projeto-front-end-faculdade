@@ -1,0 +1,51 @@
+@import url("./_variaveis.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial" sans-serif;
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+  a:visited {
+    color: var(--nav-text-color);
+  }
+
+  a {
+    color: var(--nav-text-color);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+}
+
+#conteudo {
+  min-height: 100vh;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--conteudo-bg-color);
+  color: var(--conteudo-text-color);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+  padding: 1em;
+  text-align: center;
+}
