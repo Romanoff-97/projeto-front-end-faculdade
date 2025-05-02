@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: inherit;
+
+  button {
+    background-color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 2px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #000;
+    }
+  }
+
+  button:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #03010183;
+    a {
+      transition: all 0.3s ease-in-out;
+      color: #fff;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}

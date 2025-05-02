@@ -1,10 +1,12 @@
 @import url("./_variaveis.css");
+@import url("./home.css");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Arial" sans-serif;
+  font-family: "Arial", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -16,6 +18,10 @@ nav {
 
   a:visited {
     color: var(--nav-text-color);
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 
   a {
@@ -30,8 +36,7 @@ nav {
 }
 
 #conteudo {
-  min-height: 100vh;
-  padding: 1em;
+  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -40,7 +45,7 @@ nav {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
