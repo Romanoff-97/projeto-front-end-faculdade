@@ -1,11 +1,14 @@
 @import url("./_variaveis.css");
 @import url("./home.css");
+@import url("./sobre.css");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Arial", Arial, sans-serif;
+  font-style: normal;
   scroll-behavior: smooth;
 }
 
@@ -14,7 +17,14 @@ nav {
   color: var(--nav-text-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
+
+  .logo {
+    font-family: "Playwrite RO", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 
   a:visited {
     color: var(--nav-text-color);
@@ -22,6 +32,8 @@ nav {
 
   a:hover {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--text-white-opacity);
   }
 
   a {
@@ -37,9 +49,6 @@ nav {
 
 #conteudo {
   height: 90vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background-color: var(--conteudo-bg-color);
   color: var(--conteudo-text-color);
 }
@@ -52,5 +61,76 @@ footer {
   background-color: var(--nav-bg-color);
   color: var(--nav-text-color);
   padding: 1em;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 2px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #000;
+  }
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #03010183;
+  a {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+  }
+}
+
+.foto{
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+}
+
+.foto:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    gap: 1em;
+    
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      li{
+        text-align: center;
+        text-wrap: nowrap;
+      }
+    }
+  }
+
+  #conteudo{
+    text-align: center;
+  }
+
+  .foto {
+    width: 50% !important;
+    height: auto;
+  }
+
+  footer{
+    position: relative;
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }

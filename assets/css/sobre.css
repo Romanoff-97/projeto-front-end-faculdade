@@ -1,0 +1,35 @@
+.sobre-mim {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly !important;
+  height: inherit;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    /* width: 50%; */
+    text-wrap: wrap;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+
+
+.div-sobre-mim {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-mim {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
