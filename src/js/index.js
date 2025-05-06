@@ -3,11 +3,16 @@ import * as funcoes from "./funcoes.js";
 funcoes.carregarConteudo("home.html");
 window.funcoes = funcoes;
 
-function carregarConteudo(pagina) {
-  fetch(pagina)
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("conteudo").innerHTML = data;
-    })
-    .catch((error) => console.error("Erro ao carregar conteúdo:", error));
-}
+/**
+ * Adicionando evento de clique aos links da navegação
+ * ao carregar o conteúdo da página
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      funcoes.carregarConteudo(link.getAttribute("href"));
+    });
+  });
+});

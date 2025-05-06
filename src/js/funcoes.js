@@ -10,3 +10,7 @@ export function carregarConteudo(pagina) {
     })
     .catch((error) => console.error("Erro ao carregar conteúdo:", error));
 }
+
+export function enviarMensagem(){
+  
+}
