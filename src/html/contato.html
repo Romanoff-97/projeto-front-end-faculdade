@@ -1,13 +1,42 @@
 <section id="contato">
   <div class="informacoes">
     <h2>Informações de Contato</h2>
-    <a href="mailto:nscidreira@hotmail.com">
-      <i class=""></i>
-    </a>
+
+    <h4>E-mail:</h4>
+    <ul>
+      <li>
+        <a href="mailto:nscidreira@hotmail.com" target="_blank">
+          <i class="bi bi-envelope"></i>
+          nscidreira@hotmail.com
+        </a>
+      </li>
+      <li>
+        <a href="mailto:nathalya@epigrafo.com" target="_blank">
+          <i class="bi bi-envelope"></i>
+          nathalya@epigrafo.com
+        </a>
+      </li>
+    </ul>
+
+    <h4>Redes Sociais:</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/Romanoff-97" target="_blank">
+          <i class="bi bi-github"></i>
+          Romanoff-97
+        </a>
+      </li>
+      <li>
+        <a href="linkedin.com/in/nathalya-cidreira/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+          Nathalya Cidreira
+        </a>
+      </li>
+    </ul>
   </div>
   <div class="card">
     <h3>Formulário de Contato</h3>
-    <form onsubmit="">
+    <form id="form-contato">
       <div class="form-group">
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
@@ -18,9 +47,9 @@
       </div>
       <div class="form-group">
         <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required rows="5"></textarea>
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit" id="btn-enviar">Entrar em Contato</button>
     </form>
   </div>
 </section>

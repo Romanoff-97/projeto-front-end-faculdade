@@ -4,8 +4,16 @@
   align-items: center;
   justify-items: center;
   height: inherit;
+
   h3 {
     margin-bottom: 0.5rem;
+    text-decoration: underline;
+    color: var(--text-black-opacity) !important;
+    font-size: 2rem !important;
+  }
+
+  span {
+    font-size: 1.3rem !important;
   }
 
   .foto {

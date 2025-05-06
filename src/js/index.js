@@ -13,6 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
       funcoes.carregarConteudo(link.getAttribute("href"));
+
+      if (link.textContent === "Contato") {
+        setTimeout(() => {
+          /**
+           * Adicionando evento de envio ao formulário de contato
+           */
+          const formContatoEl = document.getElementById("form-contato");
+          formContatoEl.addEventListener("submit", (event) => {
+            event.preventDefault();
+            funcoes.enviarMensagem();
+          });
+        }, 600);
+      }
     });
   });
 });
