@@ -1,6 +1,6 @@
 import * as funcoes from "./funcoes";
 
-funcoes.carregarConteudo("./home.html");
+funcoes.carregarConteudo("home.html");
 window.funcoes = funcoes;
 
 /**
