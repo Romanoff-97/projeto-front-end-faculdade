@@ -1,4 +1,4 @@
-import * as funcoes from "./src/js/funcoes.js";
+import * as funcoes from "src/js/funcoes.js";
 
 funcoes.carregarConteudo("src/html/home.html");
 window.funcoes = funcoes;
