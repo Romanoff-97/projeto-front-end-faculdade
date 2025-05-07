@@ -1,8 +1,8 @@
-@import url("./assets/css/_variaveis.css");
-@import url("./assets/css/home.css");
-@import url("./assets/css/sobre.css");
-@import url("./assets/css/contato.css");
-@import url("./assets/css/projetos.css");
+@import url("./css/_variaveis.css");
+@import url("./css/home.css");
+@import url("./css/sobre.css");
+@import url("./css/contato.css");
+@import url("./css/projetos.css");
 
 /**
  * Importando fontes do Google Fonts
