@@ -1,8 +1,8 @@
-@import url("./_variaveis.css");
-@import url("./home.css");
-@import url("./sobre.css");
-@import url("./contato.css");
-@import url("./projetos.css");
+@import url("./assets/css/_variaveis.css");
+@import url("./assets/css/home.css");
+@import url("./assets/css/sobre.css");
+@import url("./assets/css/contato.css");
+@import url("./assets/css/projetos.css");
 
 /**
  * Importando fontes do Google Fonts
@@ -110,6 +110,7 @@ button {
 button:hover {
   transition: all 0.2s ease-in-out;
   background-color: #03010183;
+
   a {
     transition: all 0.3s ease-in-out;
     color: #fff;
@@ -135,6 +136,7 @@ button:hover {
     ul {
       flex-wrap: wrap;
       justify-content: center;
+
       li {
         text-align: center;
         text-wrap: nowrap;
